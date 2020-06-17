@@ -45,11 +45,11 @@ export default function ResStackNav (){
        }
             <ResStack.Screen 
                 name="userInfo" 
-                component={UserTabNav} 
+                component={UserScreen} 
                 options={
                  {
-                     headerShown:true,
-                     header:({navigation})=>( <UserInfoHeader navigation={navigation}/>),
+                     headerShown:false,
+                     //header:({navigation})=>( <UserInfoHeader navigation={navigation}/>),
                      gesturesEnabled: false,
                 } 
             }

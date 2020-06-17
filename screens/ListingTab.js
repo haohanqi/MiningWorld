@@ -9,13 +9,22 @@ export default ({navigation})=>{
         
         <View>
             <FlatList style={{marginTop:30}} 
-                        data={data} 
-                        renderItem={({item})=><TouchableWithoutFeedback onPress={()=>{navigation.navigate('details',{product:item})}}>
-                                  <View>
-                                    <ResourceItem item={item}/>
-                                  </View>
-                              </TouchableWithoutFeedback>} 
+                      data={data} 
+                      renderItem={({item})=><TouchableWithoutFeedback onPress={()=>{navigation.navigate('details',{product:item})}}>
+                                                        <View>
+                                                            <ResourceItem item={item}/>
+                                                        </View>
+                                            </TouchableWithoutFeedback>} 
         />
+            
+            
+           
         </View>
     )
 }
+
+// {
+                
+//     data.map((item,index)=> <ResourceItem key={index} item={item}/>)
+
+// }
